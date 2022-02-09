@@ -67,8 +67,8 @@ router.post('/add',
 
 /* 
 type: PUT
-path: /api/v1/category/:id
-params: none
+path: /api/v1/category/update/:id
+params: id
 isProtected: true (admin)
 */
 
@@ -94,8 +94,8 @@ router.put('/update/:id', async (req, res) => {
 
 /* 
 type: DELETE
-path: /api/v1/category/delete
-params: none
+path: /api/v1/category/delete/:id
+params: id
 isProtected: true (admin)
 */
 

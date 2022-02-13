@@ -20,7 +20,7 @@ jobs:
       - name: Add github email
         run: git config --global user.email 'palaktiwari156@gmail.com'
       - name: add heroku remote
-        run: git remote add heroku https://heroku:036c8332-e0dc-4c99-858b-4df2f082d7a3@git.heroku.com/palak-ecommerce-api.git
+        run: git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
       - name: Fetch repo
         run: git fetch --unshallow
       - name: push to heroku remote

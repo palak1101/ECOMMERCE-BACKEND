@@ -47,12 +47,12 @@ const ProductSchema = new mongoose.Schema({
         required: true
     },
 
-    reviews: [
-        {
-            type: mongoose.Types.ObjectId,
-            ref: "reviews"
-        }
-    ]
+    // reviews: [
+    //     {
+    //         type: mongoose.Types.ObjectId,
+    //         ref: "reviews"
+    //     }
+    // ]
 
 })
 

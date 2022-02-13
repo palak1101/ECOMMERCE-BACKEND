@@ -26,7 +26,6 @@ app.use("/api/v1/product", productRoutes)
 
 app.get('/', (req, res) => {
     res.send(`Server running at PORT ${port}`)
-    console.log('hiiii')
 })
 
 app.listen(port, (req, res) => {

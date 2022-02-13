@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/palak1101/ECOMMERCE-BACKEND#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^15.0.0",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.8"
   },
   "devDependencies": {

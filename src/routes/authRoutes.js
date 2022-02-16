@@ -49,7 +49,7 @@ router.post('/signup',
         try {
             const { firstName, lastName = '', email, password } = req.body
 
-            //use bcrypt to hash password
+            //use bcrypt to hash passwords
             const salt = await bcrypt.genSalt(5)
             const hashedPassword = await bcrypt.hash(password, salt)
 

@@ -32,7 +32,8 @@ const ProductSchema = new mongoose.Schema({
             type: String
         }
     ],
-
+    
+    //ref
     category: {
         type: mongoose.Types.ObjectId,
         ref: "Category"

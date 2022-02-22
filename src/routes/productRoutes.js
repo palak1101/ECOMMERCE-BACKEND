@@ -18,7 +18,7 @@ router.get('/all', async (req, res) => {
         const products = await Product.find({})
         return res.status(200).json({ products, message: "successfully fetched products" })
     } catch (error) {
-        console.log(error.message)
+        //console.log(error.message)
         return res.status(500).json({ products: [], message: "error fetching products" })
     }
 })

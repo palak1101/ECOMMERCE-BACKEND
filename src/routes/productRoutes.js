@@ -60,11 +60,12 @@ router.post('/add',
     body('name').isLength({ min: 1 }),
     body('price').isNumeric(),
     body('listPrice').isNumeric(),
-    body('stock').isNumeric(),
-    body('description').isLength({ min: 10 }),
+    body('description').isLength({ min: 5 }),
     body('color').isLength({ min: 1 }),
+    body('compatibleWith').isLength({ min: 1 }),
     body('category').isLength({ min: 4 }),
-    body('imageURL').isURL()
+    body('imageURL').isURL(),
+    body('stock').isNumeric()
     , async (req, res) => {
 
         const { errors } = validationResult(req)

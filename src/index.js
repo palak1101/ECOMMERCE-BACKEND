@@ -6,6 +6,7 @@ import cors from 'cors';
 import authRoutes from './routes/authRoutes';
 import categoryRoutes from './routes/categoryRoutes';
 import productRoutes from './routes/productRoutes';
+import orderRoutes from './routes/orderRoutes';
 
 
 const app = express()
@@ -22,6 +23,7 @@ app.use(express.json())
 app.use("/api/v1/auth", authRoutes)
 app.use("/api/v1/category", categoryRoutes)
 app.use("/api/v1/product", productRoutes)
+app.use("/api/v1/order", orderRoutes)
 
 
 app.get('/', (req, res) => {

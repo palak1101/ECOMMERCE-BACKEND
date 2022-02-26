@@ -39,7 +39,7 @@ router.post('/signup',
 
     body('firstName').isLength({ min: 4 }),
     body('email').isEmail(),
-    body('password').isLength({ min: 8 })
+    body('password').isLength({ min: 2 })
     , async (req, res) => {
 
         const {errors} = validationResult(req)
